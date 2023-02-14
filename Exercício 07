@@ -1,0 +1,15 @@
+###7. Uma faculdade faz o pagamento de seus professores por hora/aula. Faça um algoritmo que receba o nível e a quantidade de hora/aula,
+calcule e exiba o salário de um professor e a frase a seguira tabela abaixo:
+Professor Nível 1 - 11,00 reais por hora/aula, salário: ...
+Professor Nível 2 - 15,00 reais por hora/aula, salário: ...
+Professor Nível 3 - 19,00 reais por hora/aula, salário: ...
+
+nivel = int(input('Informe o nivel do professor: '))
+aulas = int(input('Informe a quantidade de aulas dadas: '))
+if nivel == 1 :
+  valor = 11 * aulas
+elif nivel == 2 :
+  valor = 15 * aulas
+elif nivel == 3 :
+  valor = 19 * aulas
+print(f'O sálario do professor é de {valor:.2f} ')
