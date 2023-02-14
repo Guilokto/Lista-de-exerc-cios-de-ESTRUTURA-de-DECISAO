@@ -1,0 +1,39 @@
+### 20. Faça um programa que mostre a data e a hora do sistema nos seguintes formatos: **dia/mês/ano – mês por extenso e hora:minuto**.
+
+Observação: ***from*** carrega um módulo/biblioteca da linguagem Python e o ***import*** é usado para informar qual objeto desta biblioteca
+queremos importar/carregar no nosso programa
+
+    from datetime import datetime
+    #Este comando obtem a data e hora de hoje de algum país onde esta o servidor que executa nosso programa em Python.
+    #Quando eu testei, o servidor era do fuso horário de Dakar-Senegal
+    hoje = datetime.now()
+    print ('Ano atual.:',hoje.year)
+    print ('Mês.......:',hoje.month)
+    print ('Dia.......:',hoje.day)
+    print ('Hora......:',hoje.hour)
+    print ('Minuto....:',hoje.minute)
+    print ('Segundos..:',hoje.second)
+    
+from datetime import datetime
+hoje = datetime.now()
+print ('Ano atual.:',hoje.year)
+print ('Mês.......:',hoje.month)
+print ('Dia.......:',hoje.day)
+print ('Hora......:',hoje.hour)
+print ('Minuto....:',hoje.minute)
+print ('Segundos..:',hoje.second)
+if hoje.month == 1:
+    print(hoje.day,'/Janeiro/',hoje.year)
+# Dê continuidade a programação daqui pra frente
+    
+    ================================================================================================================================================================
+    
+from datetime import datetime, timezone, timedelta
+
+data_e_hora_atuais = datetime.now()
+fuso_horario = timezone(timedelta(hours=-3))
+print('UTC - Tempo Universal Coordenado:', fuso_horario)
+data_e_hora_SP = data_e_hora_atuais.astimezone(fuso_horario)
+data_e_hora_SP_em_texto = data_e_hora_SP.strftime('%d/%m/%Y %H:%M')
+print('Data e horário de São Paulo:',data_e_hora_SP_em_texto)  
+    
