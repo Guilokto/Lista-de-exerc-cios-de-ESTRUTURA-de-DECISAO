@@ -1,0 +1,7 @@
+###4. Faça um algoritmo que leia o gênero de uma pessoa. Se for digitado M ou F, apresentar 'Gênero válido!'. Caso contrário, 'Gênero inválido!'.
+
+genero = input('Informe seu genero M/F: ')
+if genero == 'M' or genero == 'F' :
+  print('Genero Valido')
+else :
+  print('Genero Invalido')
