@@ -1,0 +1,6 @@
+### 1.a) Faça um algoritmo que calcule e exiba o salário reajustado de um funcionário de acordo com a seguinte regra: Salário até 500, reajuste de 50%.
+
+salario = float(input('Insira um valor R$: '))
+if salario <= 500 :
+    salario_final = salario + ( salario * 50 / 100 )
+    print(f'O seu salario com reajuste é de R$ {salario_final:.2f}')
