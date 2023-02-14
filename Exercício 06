@@ -1,0 +1,10 @@
+###6. Faça um algoritmo que leia dois números inteiros e mostre o resultado da **diferença** do maior valor pelo menor.
+
+n1 = int(input('Informe o primeiro valor: '))
+n2 = int(input('Informe o segundo valor: '))
+if n1 > n2 :
+  resultado = n1 - n2
+  print('A diferença é de:', resultado)
+else :
+  resultado = n2 - n1
+  print('A diferença é de:', resultado ) 
